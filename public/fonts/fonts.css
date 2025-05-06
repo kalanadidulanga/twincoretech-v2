@@ -1,0 +1,23 @@
+/* Arial Rounded MT Bold is typically a system font */
+@font-face {
+  font-family: 'Arial Rounded MT Bold';
+  src: local('Arial Rounded MT Bold');
+  font-display: swap;
+}
+
+/* Bierstadt Display is available through Adobe Fonts or as a system font */
+@font-face {
+  font-family: 'Bierstadt Display';
+  src: local('Bierstadt Display');
+  font-display: swap;
+}
+
+/* Fallback font styling if the system fonts aren't available */
+.arial-rounded {
+  font-family: 'Arial Rounded MT Bold', 'Inter', 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.bierstadt {
+  font-family: 'Bierstadt Display', 'Inter', 'Arial', sans-serif;
+}

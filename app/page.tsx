@@ -69,7 +69,7 @@ export default function Home() {
             <div className="md:w-1/2 flex justify-center">
               <div className="relative w-full max-w-md h-80 md:h-96 bg-gradient-to-br from-[color:var(--color-tct-teal)] to-[color:var(--color-tct-blue)] rounded-lg shadow-xl flex items-center justify-center overflow-hidden">
                 <Image
-                  src="/TwinCoreTechLogo.svg"
+                  src="/TwinCoreTechLogo.png"
                   alt="TwinCoreTech Brand"
                   width={300}
                   height={300}
@@ -268,7 +268,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <Image
-                src="/TwinCoreTechLogo.svg"
+                src="/TwinCoreTechLogo.png"
                 alt="TwinCoreTech Logo"
                 width={150}
                 height={50}

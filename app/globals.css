@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* TwinCoreTech brand colors from SVG logo */
   --color-tct-teal: #73d1d3;
   --color-tct-orange: #ff5a24;
   --color-tct-orange-alt: #f15a24;
@@ -9,21 +10,35 @@
   --color-tct-green-alt: #22b573;
   --color-tct-blue: #2e7b9d;
   
-  --font-arial-rounded: "Arial Rounded MT Bold", "Arial", sans-serif;
+  /* TwinCoreTech font configuration */
+  --font-logo: "Arial Rounded MT Bold", "Arial", sans-serif;
+  --font-document: "Bierstadt Display", "Inter", sans-serif;
   
+  /* Light theme colors (default) */
   --color-background: #ffffff;
   --color-foreground: var(--color-tct-blue);
 }
 
-@media (prefers-color-scheme: dark) {
-  @theme {
-    --color-background: #0a0a0a;
-    --color-foreground: var(--color-tct-teal);
-  }
-}
+/* Light theme is always used as specified */
+/* No dark theme configuration */
 
 body {
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: var(--font-arial-rounded);
+  font-family: var(--font-document);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-logo);
+  color: var(--color-tct-blue);
+}
+
+/* TwinCoreTech specific heading styles */
+.tct-logo-text {
+  font-family: var(--font-logo);
+  color: var(--color-tct-blue);
+}
+
+.tct-document-text {
+  font-family: var(--font-document);
 }
